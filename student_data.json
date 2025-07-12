@@ -1,0 +1,12 @@
+{
+  "students": [
+    {
+      "student_id": "24110001",
+      "name": "Tran Le Thai",
+      "birth_date": "11/10/2006",
+      "phone": "0869655077",
+      "address": "232 le van viet"
+    }
+  ],
+  "next_id_number": 2
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head><meta charset="UTF-8"><title>Tìm kiếm</title></head>
+<body>
+  <h2>Tìm kiếm sinh viên</h2>
+  <form method="post">
+    Nhập MSSV hoặc tên: <input name="keyword">
+    <button type="submit">Tìm</button>
+  </form>
+  {% if results %}
+  <h3>Kết quả:</h3>
+  <ul>
+    {% for s in results %}
+      <li>{{ s.student_id }} - {{ s.name }} - {{ s.birth_date }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  <a href="{{ url_for('index') }}">⬅ Quay lại</a>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}Quản lý sinh viên{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <h1>📘 Quản lý sinh viên</h1>
+  <nav>
+    <a href="{{ url_for('index') }}">🏠 Trang chủ</a>
+    <a href="{{ url_for('add_student') }}">➕ Thêm</a>
+    <a href="{{ url_for('search') }}">🔍 Tìm kiếm</a>
+  </nav>
+  <hr>
+
+  {% block content %}{% endblock %}
+
+</body>
+</html>

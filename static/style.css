@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+  background: linear-gradient(to bottom right, #112D60, #B6C0C5);
+  color: #fff;
+  min-height: 100vh;
+}
+
+
+h1, h2 {
+  color: black;
+}
+
+nav a {
+  text-decoration: none;
+  color: #007bff;
+  margin-right: 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #e9ecef;
+}
+
+button {
+  padding: 6px 12px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input[type="text"], input[type="date"] {
+  padding: 6px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+a.button {
+  display: inline-block;
+  padding: 6px 14px;
+  margin: 6px 0;
+  border: 2px solid red;
+  background-color: transparent;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+/* Nút sửa, xóa sv */
+a.action-button {
+  padding: 4px 10px;
+  font-size: 0.9em;
+  margin: 0 4px;
+  border-radius: 4px;
+  text-decoration: none;
+  border: 2px solid black;
+  background-color: transparent;
+  color: black;
+  transition: all 0.2s;
+}
+
+a.action-button:hover {
+  background-color: red;
+  color: black;  /* vẫn là đen khi hover */
+}
+
+/* Bảng */
+table {
+  background-color: white;
+  color: black;
+}
+th {
+  background-color: #d9e6ff;
+  color: black;
+}

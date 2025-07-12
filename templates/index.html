@@ -1,0 +1,31 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lí sinh viên</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Danh sách sinh viên</h1>
+    <a href="{{ url_for('add_student') }}" class="button"> Thêm sinh viên</a>
+    <table border="1">
+        <tr>
+            <th>MSSV</th><th>Tên</th><th>Ngày sinh</th><th>SĐT</th><th>Địa chỉ</th><th>Hành động</th>
+        </tr>
+        {% for s in students %}
+        <tr>
+            <td>{{ s.student_id }}</td>
+            <td>{{ s.name }}</td>
+            <td>{{ s.birth_date }}</td>
+            <td>{{ s.phone }}</td>
+            <td>{{ s.address }}</td>
+            <td>
+                <a href="{{ url_for('edit_student', student_id=s.student_id) }}" class="action-button">Sửa</a>
+                <a href="{{ url_for('delete_student', student_id=s.student_id) }}" class="action-button">Xóa</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

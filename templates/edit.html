@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head><meta charset="UTF-8"><title>Sửa sinh viên</title></head>
+<body>
+  <h2>Sửa sinh viên</h2>
+  <form method="post">
+    Họ tên: <input name="name" value="{{ student.name }}"><br>
+    Ngày sinh: <input name="birth_date" value="{{ student.birth_date }}"><br>
+    SĐT: <input name="phone" value="{{ student.phone }}"><br>
+    Địa chỉ: <input name="address" value="{{ student.address }}"><br>
+    <button type="submit">Cập nhật</button>
+  </form>
+  <a href="{{ url_for('index') }}">⬅ Quay lại</a>
+</body>
+</html>
